@@ -1,0 +1,19 @@
+{
+  "name": "toro",
+  "version": "1.0.0",
+  "description": "Technical-Test-PHP - TORO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aabrudsky/Technical-Test-PHP.git"
+  },
+  "author": "aabrudsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aabrudsky/Technical-Test-PHP/issues"
+  },
+  "homepage": "https://github.com/aabrudsky/Technical-Test-PHP#readme"
+}
