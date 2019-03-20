@@ -4,7 +4,8 @@
   "description": "Technical-Test-PHP - TORO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/aabrudsky/Technical-Test-PHP/issues"
   },
-  "homepage": "https://github.com/aabrudsky/Technical-Test-PHP#readme"
+  "homepage": "https://github.com/aabrudsky/Technical-Test-PHP#readme",
+  "dependencies": {
+    "backbone": "^1.4.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
+    "pug": "^2.0.3",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v15.8.0"
+  }
 }
