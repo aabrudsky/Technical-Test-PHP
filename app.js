@@ -1,14 +1,27 @@
-var express = require('express');
-var app = express();
 
-app.get('/', function(req, res) {
- 	//res.sendfile(__dirname + '/index.html');
- 	res.sendFile(__dirname + '/index.html')
+var express = require('express'),
+	path 	= require('path'),
+	fs   	= require('fs'),
+	uuid   	= require('node-uuid');
+
+var app = express(),
+	baseDeDatos = fs.readFileSync('./datos.json').toString();
+
+var datos = JSON.parse(baseDeDatos);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Add POST, PUT, DELETE methods to the app
+app.use(express.bodyParser());
+app.use(express.cookieParser());
+app.use(express.methodOverride());
+
+// Pagina de Inicio: http:localhost:4000
+app.get('/', function (req,res){
+	res.sendfile(__dirname + '/index.html');
 });
 
-app.listen(3000, function() {
-  console.log('Aplicación ejemplo, escuchando el puerto 3000!');
-});
+// API REST
 
 // Mostrar todos los libros
 app.get('/libros', function(req,res) {
@@ -78,3 +91,24 @@ app.delete('/libros/:id', function (req,res) {
 	res.send(200);
 	
 });
+
+app.listen(3000);
+
+
+
+
+/*const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hola Mundo\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+*/
