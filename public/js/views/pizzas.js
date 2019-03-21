@@ -1,1 +1,0 @@
-var pizzas = Backbone.view.extend();
