@@ -103,7 +103,27 @@ p#price {
 p#price b{
   color: #a91e14;
 }
-#btnSave{
+#btnSave, #secondSave{
   background-color: #a91e14;
   color:#fff;
+}
+#modal-body #included li {
+}
+
+#modal-body #included i{
+  color: #a91e14;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+#modal-body p.itemIng{
+      width: 75%;
+      line-height: 18px;
+}
+#modal-body  #namePizza{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #a91e14;
+}
+#modal-body p#price {
+  width: 100%;
+  border-top: 1px solid #a91e14;
 }

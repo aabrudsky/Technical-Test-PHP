@@ -1,6 +1,19 @@
 
 $(document).ready(function() {
-    
+    $('#exampleModal').on('shown.bs.modal', function () {
+        ids = "";
+        li="";
+        $("#included li").each ( function (){
+            ids += $(this).attr("id") + ",";
+        })
+        ids.slice(0, -1);
+        $( "#namePizza" ).clone().appendTo( "#modal-body" );
+        $( "#included" ).clone().appendTo( "#modal-body" );
+        $( ".titlePrice #price" ).clone().appendTo( "#modal-body" );
+        $('.secondSave').click(function (e) {
+            alert("Missing Define - Here is sent to cook your order");
+        });
+    })
 });
 (function($) {  
     $.get = function(key)   {  
@@ -118,3 +131,4 @@ function changeCost(){
         }
     });
 }
+
