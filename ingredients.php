@@ -49,12 +49,19 @@
                     </ul>  
                   </div>
                 </div> 
-                
-
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-md-8">
+                  <button type="button" data-toggle="modal" data-target="#modalSave" class="btn btn-secondary btn-lg btn-block" id="btnSave">Save</button>
+                </div>
               </div>
             </div>
         </section>
+        
 
+
+
+        
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
